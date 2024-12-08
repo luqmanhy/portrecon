@@ -7,7 +7,6 @@ A high speed tool for passively gathering ports without active scanning.
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-red.svg"></a>
 <a href="https://goreportcard.com/badge/github.com/luqmanhy/portrecon"><img src="https://goreportcard.com/badge/github.com/luqmanhy/portrecon"></a>
-<a href="https://pkg.go.dev/github.com/luqmanhy/portrecon/pkg/portrecon"><img src="https://img.shields.io/badge/go-reference-blue"></a>
 <a href="https://github.com/luqmanhy/portrecon/releases"><img src="https://img.shields.io/github/release/luqmanhy/portrecon"></a>
 </p>
 
