@@ -16,7 +16,7 @@ import (
 )
 
 var (
-	appVersion = "v0.0.1"
+	appVersion = "v0.0.2"
 )
 
 func init() {
@@ -109,7 +109,11 @@ func main() {
 
 		for _, dataPort := range dataIp.PortData {
 			if *silent {
-				fmt.Printf("%s:%d\n", dataIp.IP, dataPort.Port)
+				if dataIp.Hostname == "" {
+					fmt.Printf("%s:%d\n", dataIp.IP, dataPort.Port)
+				} else {
+					fmt.Printf("%s:%d\n", dataIp.Hostname, dataPort.Port)
+				}
 			} else {
 				if dataPort.Protocol == "" {
 					gologger.Print().Msgf("%-12s %-15s %-20s %-20s",
